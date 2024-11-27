@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const uri = await process.env.MONGO_URI; // Add this to your .env file
+const uri = "mongodb+srv://todoapp:todoapp@cluster0.octp8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // Add this to your .env file
 const options = {};
 
 let client;
