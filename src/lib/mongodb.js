@@ -6,9 +6,7 @@ const options = {};
 let client;
 let clientPromise;
 
-if (!process.env.MONGO_URI) {
-  throw new Error("Please add your Mongo URI to .env");
-}
+
 
 if (process.env.NODE_ENV === "development") {
   // In development mode, use a global variable so the client is not recreated
